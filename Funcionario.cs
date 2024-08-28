@@ -12,16 +12,17 @@ namespace RevImposto
         public Double Imposto;
         public double SalarioBruto;
 
+
         public Funcionario(string nome, double imposto, double salarioBruto)
         {
             Nome = nome;
             Imposto = imposto;
             SalarioBruto = salarioBruto;
         }
+            
         public double SalarioComDesconto()
         {
-            double salarioLiquido = SalarioBruto - Imposto * 100;
-            return salarioLiquido;
+                        return SalarioBruto - Imposto * 100;
         }
-    }
+        }
 }
