@@ -5,10 +5,8 @@ Funcionario funcionario = new Funcionario("Thiago Bailarina", 10.0, 9200.00);
 
 funcionario.SalarioComDesconto();
 double liquido = funcionario.SalarioComDesconto();
-Console.WriteLine($"Salário líquido: {liquido}");
+Console.WriteLine($"Salário líquido: {liquido:f2}");
 
-double valorAumento = 15;
+funcionario.AumentandoSalario(22);
 
-liquido = funcionario.SalarioBruto + valorAumento * 100;
-
-Console.WriteLine($"Novo Salário líquido: {liquido}");
+Console.WriteLine($"Novo Salário líquido: {funcionario.SalarioBruto:f2}");

@@ -24,5 +24,9 @@ namespace RevImposto
         {
                         return SalarioBruto - Imposto * 100;
         }
+        public void AumentandoSalario(double bonus)
+        {
+SalarioBruto += bonus*100;
+        }
         }
 }
