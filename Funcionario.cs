@@ -8,5 +8,20 @@ namespace RevImposto
 {
     public class Funcionario
     {
+        public string Nome;
+        public Double Imposto;
+        public double SalarioBruto;
+
+        public Funcionario(string nome, double imposto, double salarioBruto)
+        {
+            Nome = nome;
+            Imposto = imposto;
+            SalarioBruto = salarioBruto;
+        }
+        public double SalarioComDesconto()
+        {
+            double salarioLiquido = SalarioBruto - Imposto * 100;
+            return salarioLiquido;
+        }
     }
 }
