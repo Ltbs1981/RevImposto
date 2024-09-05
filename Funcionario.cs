@@ -2,28 +2,10 @@
 {
     public class Funcionario
     {
-        
-        private string _nome;
-        public string Nome
-        {
-            get { return _nome; }
-            set { _nome = value; }
-        }
 
-        private double _imposto;
-        public double Imposto
-        {
-            get { return _imposto; }
-            set { _imposto = value; }
-        }
-
-        private double _salarioBruto;
-        public double SalarioBruto
-        {
-            get { return _salarioBruto; }
-            set { _salarioBruto = value; }
-        }
-
+        public string  Nome { get; set; }
+        public double  Imposto { get; set; }
+        public double  SalarioBruto { get; set; }
 
         public Funcionario(string nome, double imposto, double salarioBruto)
         {
